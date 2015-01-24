@@ -69,6 +69,15 @@
                 "element": {"#": "task"}
             }
         },
+        "task1": {
+            "prototype": "ui/task.reel",
+            "properties": {
+                "element": {"#": "task1"}
+            },
+            "bindings": {
+                "task": {"<-": "@list.iteration.object"}
+            }
+        },
         "textField": {
             "prototype": "digit/ui/text-field.reel",
             "properties": {
@@ -98,7 +107,7 @@
             @task
             @task
             @task
-            <li></li>
+            <li data-montage-id="task1"></li>
         </ul>
         <div data-montage-id="task"></div>
         <input type="checkbox" data-montage-id="checkbox">
